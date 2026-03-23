@@ -1,0 +1,8 @@
+export {default as ErrorPage} from './ErrorPage'
+export {default as ExplorePage} from './ExplorePage'
+export {default as HomePage} from './HomePage'
+export {default as InstagramHelpPage} from './HelpPage'
+export {default as LoginPage} from './LoginPage'
+export {default as MesaagePage} from './MessagePage'
+export {default as ReelPage} from './ReelPage'
+export {default as SignupPage} from './SignupPage'

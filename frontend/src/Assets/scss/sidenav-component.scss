@@ -1,0 +1,94 @@
+.navbar{
+   @apply h-[90vh] pr-2 sticky top-[30px];
+
+   
+   p{
+      
+      :hover{
+         color: white;
+      }
+   }
+}
+.side-nav-search{
+   width: 60px;
+   transition: all 0.4s ease-in-out 0.2s;
+   border-right: 1px transparent;
+   transition: all;
+   
+   .rounded-nav-border{
+      border: 1px solid white;
+      border-radius: 10px;
+      justify-content: center;
+   }
+   #side-nav-item{
+      justify-content: center;
+      z-index: 20;
+   }
+   #nav-text{
+      display: none;
+   }
+
+   .insta-text{
+      display: none;
+   }
+   .insta-logo{
+      display: block;
+   }
+}
+.main-side-nav{
+   width: 300px;
+   transition: width 0.4s ease-in-out;
+   border-right: 1px solid rgb(56, 53, 53);
+   #nav-text{
+      display: block;
+   }
+
+   .rounded-nav-border{
+      border: 1px solid transparent;
+   }
+
+   .insta-text{
+      display: block;
+   }
+   .insta-logo{
+      display: none;
+   }
+   .search-drawer{
+      width: 0px;
+   }
+}
+
+.search-drawer{
+   @apply h-[90vh] pr-2 sticky top-[30px];
+   background-color: black;
+   width: 0px;
+   top: 0px;
+   transition: width 0.4s ease-out;
+   position: absolute;
+   z-index: 1;
+   
+   &.expanded{
+      width: 350px;
+      padding-left: 70px;
+
+      input{
+         visibility: visible;
+         transition: visibility 0.3s ease-in-out 0.1s ;
+      }
+
+      p, img, svg{
+         visibility: visible;
+         transition: visibility 0.2s ease-in-out 0.2s ;
+      }
+   }
+   &.collapsed{
+      width: 0px;
+      visibility: hidden;
+
+      p, img, svg, input{
+         visibility: hidden;
+      }
+   }
+}
+
+
